@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>생활기상지수 조회 서비스 </h1>
+    <p>이 프로그램은 오늘 특정 시간을 기준으로 내일, 내일 모레의 자외선 지수를 출력하는 프로그램입니다.</p>
+    <form action="http://127.0.0.1:5000/info" method="GET">
+        <input name = "h" placeholder="조회할 시간을 입력하세요.">
+        <input type="submit" value="결과 출력하기">
+    </form>
+    <p>전달 받은 값 : {{ a }}</p>
 </body>
 </html>
